@@ -11,6 +11,8 @@
 #include"menu.h"
 #include"animal.h"
 #include"profission.h"
+#include"filmes.h"
+#include"series.h"
 /*--------------------------- ENUM --------------------------*/
 enum menu_game {animals = 1, profession, films, serie,sair}choise;
 
@@ -35,10 +37,12 @@ int main(int argc, char *argv[])
         profission();
         break;
       case 3:
-        printf("filmes.......\n");
+       system("clear");
+       filmes();
         break;
       case 4:
-        printf("serie .......\n");
+        system("clear");
+        series();
         break;
       case 5:
         printf("Leaving......\n");
