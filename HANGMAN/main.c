@@ -10,12 +10,9 @@
 #include<stdlib.h>
 #include"menu.h"
 #include"animal.h"
-/*----------------------- DECLARATION OF CONSTANTS ---------------------*/
-
-/*------------------------------ ENUM ----------------------------------*/
+#include"profission.h"
+/*--------------------------- ENUM --------------------------*/
 enum menu_game {animals = 1, profession, films, serie,sair}choise;
-
-/*----------------------- PROTOTYPE OF FUNCTIONS -----------------------*/
 
 /*------------------------------- MAIN ---------------------------------*/
 int main(int argc, char *argv[])
@@ -33,7 +30,9 @@ int main(int argc, char *argv[])
         animal();
         break;
       case 2:
-        printf("profisaoo.....\n");
+
+        system("clear");
+        profission();
         break;
       case 3:
         printf("filmes.......\n");

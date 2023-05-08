@@ -7,22 +7,22 @@
 #define MEDIUM 20
 #define HARD 15
 
-extern void animal();
+extern void profission();
 
-void animal(void)
+void profission(void)
 {
   /*==================== VARIAVEIS ==========================*/
   /*=======================================================*/
 
 
-  char secret_word[] = "Hippopotamus";
+  char secret_word[] = "ophthalmologist";
   int live = 0,option,score = 0,i,tam = 0,compara_string;
   tam = strlen(secret_word);
   char result[tam];
   memset(result,0, sizeof(result));//inizializa meu vetor com 0
   char lettre ;
   int easy = EASY, medium = MEDIUM, hard = HARD; 
-  int lista_de_animais;
+  int lista_de_profissoes;
   /*------------------------ SUBMENU ---------------------------------*/
   printf("#==============================#\n");
   printf("#                              #\n");
@@ -56,68 +56,68 @@ void animal(void)
     srand(time(NULL));
 
     // Gera um número aleatório no intervalo de 1 a 20
-    lista_de_animais = rand() % 20 + 1;
+    lista_de_profissoes = rand() % 20 + 1;
 
-  switch (lista_de_animais) {
+  switch (lista_de_profissoes) {
     case 1:
-      strcpy(secret_word,"giraffe");
+      strcpy(secret_word,"lawyer");
       break;
     case 2:
-      strcpy(secret_word,"rabbit");
+      strcpy(secret_word,"engineer");
       break;
     case 3:
-      strcpy(secret_word,"hamster");
+      strcpy(secret_word,"teacher");
       break;
     case 4:
-      strcpy(secret_word,"goldfish");
+      strcpy(secret_word,"programmer");
       break;
     case 5:
-      strcpy(secret_word,"parrot");
+      strcpy(secret_word,"scientist");
       break;
     case 6:
-      strcpy(secret_word,"canary");
+      strcpy(secret_word,"musician");
       break;
     case 7:
-      strcpy(secret_word,"turtle");
+      strcpy(secret_word,"police");
       break;
     case 8:
-      strcpy(secret_word,"frog");
+      strcpy(secret_word,"dentist");
       break;
     case 9:
-      strcpy(secret_word,"lizard");
+      strcpy(secret_word,"accountant");
       break;
     case 10:
-      strcpy(secret_word,"snake");
+      strcpy(secret_word,"architect");
       break;
     case 11:
-      strcpy(secret_word,"mouse");
+      strcpy(secret_word,"psychologist");
       break;
     case 12:
-      strcpy(secret_word,"ferret");
+      strcpy(secret_word,"entrepreneur");
       break;
     case 13:
-      strcpy(secret_word,"hedgehog");
+      strcpy(secret_word,"journalist");
       break;
     case 14:
-      strcpy(secret_word,"chinchilla");
+      strcpy(secret_word,"salesperson");
       break;
     case 15:
-      strcpy(secret_word,"tarantula");
+      strcpy(secret_word,"historian");
       break;
     case 16:
-      strcpy(secret_word,"scorpion");
+      strcpy(secret_word,"librarian");
       break;
     case 17:
-      strcpy(secret_word,"elephant");
+      strcpy(secret_word,"veterinarian");
       break;
     case 18:
-      strcpy(secret_word,"monkey");
+      strcpy(secret_word,"electrician");
       break;
     case 19:
-      strcpy(secret_word,"rhino");
+      strcpy(secret_word,"mechanic");
       break;
     case 20:
-      strcpy(secret_word,"hippopotamus");
+      strcpy(secret_word,"plumber");
       break;  
   }
 
@@ -194,3 +194,4 @@ void animal(void)
   }while (live > -1);
 
 }
+
