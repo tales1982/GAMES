@@ -1,6 +1,6 @@
 /*
    HANGMAN game to play on LINUX.
-   Developed by..: TALES LIMA.
+   Developed by..: TALES LIMA...
    */
 
 /*---------------------------- BLIBLIOTEC ------------------------------*/
